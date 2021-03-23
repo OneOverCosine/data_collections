@@ -52,3 +52,7 @@ shopping_list.remove("orange")
 to get: ``['chocolate', 'avocados', 'milk', 'apple juice']``
 
 ## Mixed Lists
+You can have lists with different datatypes
+```python
+mixed_list = [1, 2, 3, "one", "two", "three"]
+```

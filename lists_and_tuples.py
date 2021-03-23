@@ -11,3 +11,6 @@ shopping_list.append("apple juice")
 
 shopping_list.pop(0)
 print(shopping_list)
+
+mixed_list = [1, 2, 3, "one", "two", "three"]
+print(mixed_list)
