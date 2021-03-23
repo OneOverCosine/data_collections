@@ -135,3 +135,18 @@ car_parts.discard("doors")
 ```
 ---
 ### Frozen Sets
+These are like sets, in that they are an unordered collection of items. Unlike sets, frozen sets are immutable.
+Use ``frozenset(iterable)`` to create a frozen set from any
+
+```python
+s_shopping_list = set(shopping_list)
+fs_shopping_list = frozenset(shopping_list)
+
+print(s_shopping_list) # prints {'chocolate', 'avocados', 'bread', 'milk'} as that's the order the original list is in
+print(fs_shopping_list) # prints frozenset({'chocolate', 'avocados', 'bread', 'milk'})
+
+s_shopping_list.add("pain au chocolat") 
+fs_shopping_list.add("pain au chocolat)") # throws an exeption
+
+print(s_shopping_list) # prints {'bread', 'chocolate', 'pain au chocolat', 'avocados', 'milk'} in any order
+```

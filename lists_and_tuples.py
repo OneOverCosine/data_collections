@@ -25,7 +25,19 @@ mixed_list = [1, 2, 3, "one", "two", "three"]
 
 # prompted by a question
 
-tuple_of_lists = (shopping_list, mixed_list)
-print(tuple_of_lists)
-tuple_of_lists[0][1] = "M 'n Ms"
-print(tuple_of_lists)
+# tuple_of_lists = (shopping_list, mixed_list)
+# print(tuple_of_lists)
+# tuple_of_lists[0][1] = "M 'n Ms"
+# print(tuple_of_lists)
+
+# Using sets and frozen sets
+s_shopping_list = set(shopping_list)
+fs_shopping_list = frozenset(shopping_list)
+
+print(s_shopping_list)
+print(fs_shopping_list)
+
+s_shopping_list.add("pain au chocolat")
+#fs_shopping_list.add("pain au chocolat)") # throws an error
+
+print(s_shopping_list)
